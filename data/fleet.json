@@ -1,0 +1,86 @@
+[
+  {
+    "id": "V01",
+    "model": "Mercedes Sprinter",
+    "places": 17,
+    "status": "Disponible",
+    "price": "a partir 80 euro",
+    "luggage": "plus de 10 valise",
+    "images": [
+      "/media/V0001.jpeg",
+      "/media/V001.jpeg",
+      "/media/V01.jpeg"
+    ],
+    "slug": "mercedes-sprinter"
+  },
+  {
+    "id": "V02",
+    "model": "Volswagen Crafter",
+    "places": 20,
+    "status": "Disponible",
+    "price": "a partir 70 euro",
+    "luggage": "plus de 10 valise",
+    "images": [
+      "/media/V0002.jpeg",
+      "/media/V002.jpeg",
+      "/media/V02.jpeg"
+    ],
+    "slug": "volswagen-crafter"
+  },
+  {
+    "id": "V03",
+    "model": "Fiat Scuedo ",
+    "places": 7,
+    "status": "Disponible",
+    "price": "a partir 50 euro",
+    "luggage": "plus de 10 valise",
+    "images": [
+      "/media/V0003.jpeg",
+      "/media/V003.jpeg",
+      "/media/V03.jpeg"
+    ],
+    "slug": "fiat-scuedo"
+  },
+  {
+    "id": "V04",
+    "model": "Mercedes Vito",
+    "places": 7,
+    "status": "Disponible",
+    "price": "a partir 90 euro",
+    "luggage": "plus de 10 valise",
+    "images": [
+      "/media/V0004.jpeg",
+      "/media/V004.jpeg",
+      "/media/V04.jpeg"
+    ],
+    "slug": "mercedes-vito"
+  },
+  {
+    "id": "V05",
+    "model": "Volswagen Crafter",
+    "places": 17,
+    "status": "Disponible",
+    "price": "a partir 80 euro",
+    "luggage": "plus de 10 valise",
+    "images": [
+      "/media/V0005.jpeg",
+      "/media/V005.jpeg",
+      "/media/V05.jpeg"
+    ],
+    "slug": "volswagen-crafter"
+  },
+  {
+    "id": "V06",
+    "model": "Toyota 4X4",
+    "places": 6,
+    "status": "Disponible",
+    "price": "a partir 80 euro",
+    "luggage": "plus de 10 valise",
+    "images": [
+      "/media/V0006.jpeg",
+      "/media/V006.jpeg",
+      "/media/V06.jpeg"
+    ],
+    "slug": "toyota-4x4"
+  }
+]

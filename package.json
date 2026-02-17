@@ -6,7 +6,8 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
-    "start": "next start"
+    "start": "next start",
+    "generate-data": "node scripts/generate-data.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -60,6 +61,7 @@
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.9",
+    "xlsx": "^0.18.5",
     "zod": "3.25.76"
   },
   "devDependencies": {

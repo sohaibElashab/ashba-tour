@@ -25,7 +25,7 @@ export default function Hero({ onScroll }: HeroProps) {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url(/hero-bg.png)",
+          backgroundImage: "url(/hero-bg-new.png)",
           backgroundAttachment: "fixed",
         }}
       >
@@ -48,7 +48,7 @@ export default function Hero({ onScroll }: HeroProps) {
 
           {/* Reservation Form */}
           <div className="max-w-4xl mx-auto px-4">
-            <ReservationForm />
+            <ReservationForm type="general" />
           </div>
         </div>
       </div>

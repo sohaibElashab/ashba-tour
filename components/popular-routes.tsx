@@ -2,43 +2,21 @@
 
 import { MapPin, Clock, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 import { useLocale } from "@/contexts/locale-context";
 import { convertAndFormat } from "@/lib/currency";
+import { getFeaturedTours } from "@/lib/data";
 
-const routes = [
-  {
-    id: 1,
-    from: "Marrakech Medina",
-    to: "Marrakech Airport",
-    duration: "30 min",
-    price: 45,
-    image: "/marrakech-airport.jpg",
-  },
-  {
-    id: 2,
-    from: "Marrakech City",
-    to: "Atlas Mountains",
-    duration: "2 hours",
-    price: 85,
-    image: "/atlas-mountains-morocco.jpg",
-  },
-  {
-    id: 3,
-    from: "Marrakech",
-    to: "Essaouira Beach",
-    duration: "3 hours",
-    price: 120,
-    image: "/essaouira-beach-morocco.jpg",
-  },
-  {
-    id: 4,
-    from: "Marrakech",
-    to: "Sahara Desert",
-    duration: "5 hours",
-    price: 200,
-    image: "/sahara-desert-dunes.jpg",
-  },
-];
+const routes = getFeaturedTours().map((tour) => ({
+  id: tour.id,
+  slug: tour.slug,
+  from: "Marrakech", 
+  to: tour.title,
+  duration: "Varies", 
+  price: 0, // Price not in excel
+  image: tour.image
+}));
+
 
 export default function PopularRoutes() {
   const { t } = useTranslation();
@@ -64,51 +42,52 @@ export default function PopularRoutes() {
               key={route.id}
               className="group cursor-pointer slide-up transition-all hover:shadow-2xl"
             >
-              {/* Route Card */}
-              <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-                {/* Image */}
-                <div className="relative h-48 overflow-hidden bg-gray-200">
-                  <img
-                    src={route.image || "/placeholder.svg"}
-                    alt={route.to}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 to-transparent" />
+              <Link href={`/tours/${route.slug}`} className="block h-full">
+                {/* Route Card */}
+                <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  {/* Image */}
+                  <div className="relative h-48 overflow-hidden bg-gray-200">
+                    <img
+                      src={route.image || "/placeholder.svg"}
+                      alt={route.to}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 to-transparent" />
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-4 flex flex-col flex-1">
+                    <div className="flex items-center gap-2 mb-3 text-sm text-muted-foreground">
+                      <MapPin size={16} className="text-primary" />
+                      <span>
+                        {t("routes.from")} {route.from}
+                      </span>
+                    </div>
+
+                    <div className="flex items-center justify-between mb-4 flex-1">
+                      <div>
+                        <p className="font-semibold text-foreground line-clamp-2">
+                          {route.to}
+                        </p>
+                      </div>
+                      <ArrowRight size={16} className="text-primary shrink-0" />
+                    </div>
+
+                    <div className="mt-auto">
+                      <div className="flex items-center justify-between pt-3 border-t border-border mb-4">
+                        <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                          <Clock size={14} />
+                          {route.duration}
+                        </div>
+                      </div>
+
+                      <button className="w-full px-4 py-2 bg-primary hover:bg-primary/90 text-white text-sm font-medium rounded-lg transition-colors">
+                        {t("button.bookNow")}
+                      </button>
+                    </div>
+                  </div>
                 </div>
-
-                {/* Content */}
-                <div className="p-4">
-                  <div className="flex items-center gap-2 mb-3 text-sm text-muted-foreground">
-                    <MapPin size={16} className="text-primary" />
-                    <span>
-                      {t("routes.from")} {route.from}
-                    </span>
-                  </div>
-
-                  <div className="flex items-center justify-between mb-4">
-                    <div>
-                      <p className="font-semibold text-foreground">
-                        {route.to}
-                      </p>
-                    </div>
-                    <ArrowRight size={16} className="text-primary" />
-                  </div>
-
-                  <div className="flex items-center justify-between pt-3 border-t border-border">
-                    <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                      <Clock size={14} />
-                      {route.duration}
-                    </div>
-                    <div className="font-semibold text-primary">
-                      {convertAndFormat(route.price, "USD", currency)}
-                    </div>
-                  </div>
-
-                  <button className="w-full mt-4 px-4 py-2 bg-primary hover:bg-primary/90 text-white text-sm font-medium rounded-lg transition-colors">
-                    {t("button.bookNow")}
-                  </button>
-                </div>
-              </div>
+              </Link>
             </div>
           ))}
         </div>

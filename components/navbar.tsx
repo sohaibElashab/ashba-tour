@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import LocaleSelector from "./locale-selector";
@@ -10,18 +11,40 @@ interface NavbarProps {
   scrolled: boolean;
 }
 
-export default function Navbar({ scrolled }: NavbarProps) {
+export default function Navbar({ scrolled: propsScrolled }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useTranslation();
+  const pathname = usePathname();
+
+  // Combine props and internal state/path logic
+  // If not on home page ("/"), we generally want a solid navbar or specific behavior
+  const isHome = pathname === "/";
+  
+  useEffect(() => {
+    const handleScroll = () => {
+       setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Determine effective scrolled state
+  // On home page: use prop or internal scroll listener
+  // On other pages: always "scrolled" (white bg) unless we want transparent there too
+  const scrolled = isHome ? (propsScrolled || isScrolled) : true;
+
 
   const navLinks = [
-    { label: t("nav.home"), href: "#hero" },
-    { label: t("nav.routes"), href: "#routes" },
-    { label: t("nav.fleet"), href: "#fleet" },
-    { label: t("nav.whyUs"), href: "#why-us" },
-    { label: t("nav.reviews"), href: "#reviews" },
-    { label: t("nav.faq"), href: "#faq" },
+    { label: t("nav.home"), href: "/#hero" },
+    { label: t("nav.routes"), href: "/#routes" },
+    { label: "All Tours", href: "/tours" },
+    { label: t("nav.fleet"), href: "/#fleet" },
+    { label: t("nav.whyUs"), href: "/#why-us" },
+    { label: t("nav.reviews"), href: "/#reviews" },
+    { label: t("nav.faq"), href: "/#faq" },
   ];
+
 
   return (
     <nav
@@ -32,7 +55,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a href="#hero" className="flex items-center gap-2">
+          <a href="/#hero" className="flex items-center gap-2">
             <Image
               src="/logo.png"
               alt="Ashab Tours Logo"
