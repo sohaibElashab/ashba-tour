@@ -3,7 +3,7 @@
 import type React from "react";
 
 import { useState, useEffect } from "react";
-import { Calendar, MapPin, Users, Zap, Briefcase, Calculator } from "lucide-react";
+import { Calendar, MapPin, Users, Zap, Briefcase, Calculator, Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useLocale } from "@/contexts/locale-context";
 import { convertAndFormat } from "@/lib/currency";
@@ -304,7 +304,7 @@ ${total ? `Est. Total: ${total} EUR` : 'Price: Quote Request'}
               */}
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {fleet.map((vehicle) => (
-                  <label key={vehicle.id} className={`relative cursor-pointer group ${type === 'fleet' && formData.vehicle !== vehicle.id ? 'hidden' : ''} ${type === 'fleet' ? 'col-span-full' : ''}`}>
+                  <label key={vehicle.id} className={`relative cursor-pointer group h-24 sm:h-32 overflow-hidden rounded-xl ${type === 'fleet' && formData.vehicle !== vehicle.id ? 'hidden' : ''} ${type === 'fleet' ? 'col-span-full h-48' : ''}`}>
                     <input
                       type="radio"
                       name="vehicle"
@@ -316,19 +316,30 @@ ${total ? `Est. Total: ${total} EUR` : 'Price: Quote Request'}
                       disabled={type === 'fleet'} // Lock if specifically booking this vehicle
                       className="sr-only"
                     />
-                    <div
-                      className={`p-3 rounded-lg border-2 transition-all flex flex-col items-center justify-center text-center h-full ${
-                        formData.vehicle === vehicle.id
-                          ? "border-primary bg-primary/5 shadow-md"
-                          : "border-border hover:border-primary/50 bg-white"
-                      }`}
-                    >
-                        {/* We could try to show visual icon or fleet image here if we had a small one, utilizing the emoji for now or simple icon */}
-                      <div className="text-2xl mb-1">🚐</div>
-                      <div className="font-medium text-sm leading-tight">{vehicle.model}</div>
-                      <div className="text-xs text-muted-foreground mt-1">
+                    {/* Background Image */}
+                    <div 
+                        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        style={{ backgroundImage: `url(${vehicle.images?.[0] || '/placeholder.svg'})` }}
+                    />
+                    
+                    {/* Overlay */}
+                    <div className={`absolute inset-0 transition-colors ${
+                        formData.vehicle === vehicle.id 
+                            ? 'bg-primary/80' 
+                            : 'bg-black/60 group-hover:bg-black/50'
+                    }`} />
+                    
+                    {/* Content */}
+                    <div className="relative h-full flex flex-col items-center justify-center text-white p-2 text-center">
+                      <div className="font-bold text-base sm:text-lg leading-tight mb-1">{vehicle.model}</div>
+                      <div className="text-xs sm:text-sm opacity-90 font-medium bg-white/20 px-2 py-0.5 rounded-full backdrop-blur-xs">
                         {vehicle.places} Seats
                       </div>
+                      {formData.vehicle === vehicle.id && (
+                          <div className="absolute top-2 right-2 bg-white text-primary rounded-full p-0.5">
+                              <Check size={12} strokeWidth={4} />
+                          </div>
+                      )}
                     </div>
                   </label>
                 ))}
