@@ -146,7 +146,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const resend = new Resend("re_YogTceuJ_GRwvARSksbfE8ELVGBqiZmvm");
 
     const serviceLabel =
       {
@@ -158,8 +158,8 @@ export async function POST(request: NextRequest) {
     const subject = `New ${serviceLabel} Reservation - ${data.personalInfo.fullName}`;
 
     const { data: result, error: sendError } = await resend.emails.send({
-      from: "Ashab Tours <onboarding@resend.dev>",
-      to: process.env.EMAIL_RECIPIENT || "reservationashabtours@gmail.com",
+      from: "Ashab Tours",
+      to: "reservationashabtours@gmail.com",
       replyTo: data.personalInfo.email,
       subject,
       html: buildEmailHtml(data),
