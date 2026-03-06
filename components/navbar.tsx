@@ -20,10 +20,10 @@ export default function Navbar({ scrolled: propsScrolled }: NavbarProps) {
   // Combine props and internal state/path logic
   // If not on home page ("/"), we generally want a solid navbar or specific behavior
   const isHome = pathname === "/";
-  
+
   useEffect(() => {
     const handleScroll = () => {
-       setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -32,8 +32,7 @@ export default function Navbar({ scrolled: propsScrolled }: NavbarProps) {
   // Determine effective scrolled state
   // On home page: use prop or internal scroll listener
   // On other pages: always "scrolled" (white bg) unless we want transparent there too
-  const scrolled = isHome ? (propsScrolled || isScrolled) : true;
-
+  const scrolled = isHome ? propsScrolled || isScrolled : true;
 
   const navLinks = [
     { label: t("nav.home"), href: "/#hero" },
@@ -44,7 +43,6 @@ export default function Navbar({ scrolled: propsScrolled }: NavbarProps) {
     { label: t("nav.reviews"), href: "/#reviews" },
     { label: t("nav.faq"), href: "/#faq" },
   ];
-
 
   return (
     <nav
@@ -86,7 +84,7 @@ export default function Navbar({ scrolled: propsScrolled }: NavbarProps) {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-2">
             <a
-              href="https://wa.me/212600000000"
+              href="https://wa.me/212654155528"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
@@ -134,7 +132,7 @@ export default function Navbar({ scrolled: propsScrolled }: NavbarProps) {
               </a>
             ))}
             <a
-              href="https://wa.me/212600000000"
+              href="https://wa.me/212654155528"
               target="_blank"
               rel="noopener noreferrer"
               className="block mx-4 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium text-center"

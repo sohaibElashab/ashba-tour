@@ -6,9 +6,9 @@ import {
   Phone,
   Mail,
   MapPin,
-  Facebook,
   Instagram,
-  Twitter,
+  Linkedin,
+  Star,
 } from "lucide-react";
 
 export default function Footer() {
@@ -45,7 +45,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 text-white/80 hover:text-primary transition-colors">
                 <Mail size={16} />
-                Reservationashavtours@gmail.com
+                Reservationashabtours@gmail.com
               </li>
               <li className="flex items-center gap-2 text-white/80 hover:text-primary transition-colors">
                 <MapPin size={16} />
@@ -69,14 +69,30 @@ export default function Footer() {
               {t("button.whatsapp")}
             </a>
             <div className="flex gap-3">
-              {[Facebook, Instagram, Twitter].map((Icon, idx) => (
-                <button
-                  key={idx}
-                  className="p-2 rounded-lg bg-white/10 hover:bg-primary transition-colors"
-                >
-                  <Icon size={18} />
-                </button>
-              ))}
+              <a
+                href="https://www.instagram.com/ashabtours"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg bg-white/10 hover:bg-primary transition-colors"
+              >
+                <Instagram size={18} />
+              </a>
+              <a
+                href="https://www.tripadvisor.fr/Attraction_Review-g293734-d34091930-Reviews-Ashab_Tours_Transport_Touristique-Marrakech_Marrakech_Safi.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg bg-white/10 hover:bg-primary transition-colors"
+              >
+                <Star size={18} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/ashab-tours/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg bg-white/10 hover:bg-primary transition-colors"
+              >
+                <Linkedin size={18} />
+              </a>
             </div>
           </div>
         </div>
