@@ -18,7 +18,7 @@ export default function Footer() {
     <footer className="bg-secondary text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
             <div className="mb-4">
@@ -33,41 +33,6 @@ export default function Footer() {
             <p className="text-white/80 text-sm">{t("footer.description")}</p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-semibold mb-4 text-lg">
-              {t("footer.quickLinks")}
-            </h3>
-            <ul className="space-y-2 text-sm text-white/80">
-              <li>
-                <a
-                  href="#routes"
-                  className="hover:text-primary transition-colors"
-                >
-                  {t("nav.routes")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#fleet"
-                  className="hover:text-primary transition-colors"
-                >
-                  {t("nav.fleet")}
-                </a>
-              </li>
-              <li>
-                <a href="#faq" className="hover:text-primary transition-colors">
-                  {t("nav.faq")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  {t("footer.terms")}
-                </a>
-              </li>
-            </ul>
-          </div>
-
           {/* Contact */}
           <div>
             <h3 className="font-semibold mb-4 text-lg">
@@ -76,11 +41,11 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-white/80 hover:text-primary transition-colors">
                 <Phone size={16} />
-                +212 600 000 000
+                +212 654-155528
               </li>
               <li className="flex items-center gap-2 text-white/80 hover:text-primary transition-colors">
                 <Mail size={16} />
-                info@marrakech-transfers.com
+                Reservationashavtours@gmail.com
               </li>
               <li className="flex items-center gap-2 text-white/80 hover:text-primary transition-colors">
                 <MapPin size={16} />
@@ -95,7 +60,7 @@ export default function Footer() {
               {t("footer.quickBooking")}
             </h3>
             <a
-              href="https://wa.me/212600000000"
+              href="https://wa.me/212654155528"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 w-full px-4 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg transition-colors font-medium text-center justify-center mb-3"
@@ -122,14 +87,6 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white/70">
           <p>&copy; 2025 Marrakech Transfers. {t("footer.rights")}</p>
-          <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-primary transition-colors">
-              {t("footer.privacy")}
-            </a>
-            <a href="#" className="hover:text-primary transition-colors">
-              {t("footer.terms")}
-            </a>
-          </div>
         </div>
       </div>
     </footer>
