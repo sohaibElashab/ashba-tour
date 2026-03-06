@@ -158,7 +158,7 @@ export async function POST(request: NextRequest) {
     const subject = `New ${serviceLabel} Reservation - ${data.personalInfo.fullName}`;
 
     const { data: result, error: sendError } = await resend.emails.send({
-      from: "Ashab Tours",
+      from: "Ashab Tours <onboarding@resend.dev>",
       to: "reservationashabtours@gmail.com",
       replyTo: data.personalInfo.email,
       subject,
