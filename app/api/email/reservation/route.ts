@@ -157,7 +157,7 @@ export async function POST(request: NextRequest) {
 
     const subject = `New ${serviceLabel} Reservation - ${data.personalInfo.fullName}`;
 
-    await resend.emails.send({
+    const { data: result, error: sendError } = await resend.emails.send({
       from: "Ashab Tours <onboarding@resend.dev>",
       to: process.env.EMAIL_RECIPIENT || "reservationashabtours@gmail.com",
       replyTo: data.personalInfo.email,
@@ -165,14 +165,23 @@ export async function POST(request: NextRequest) {
       html: buildEmailHtml(data),
     });
 
+    if (sendError) {
+      console.error("Resend error:", sendError);
+      return NextResponse.json(
+        { error: "Failed to send email", details: sendError.message },
+        { status: 500 },
+      );
+    }
+
     return NextResponse.json(
       { success: true, message: "Reservation email sent successfully" },
       { status: 201 },
     );
   } catch (error) {
     console.error("Error sending email:", error);
+    const message = error instanceof Error ? error.message : "Unknown error";
     return NextResponse.json(
-      { error: "Failed to send email" },
+      { error: "Failed to send email", details: message },
       { status: 500 },
     );
   }
