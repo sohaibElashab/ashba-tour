@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
 function buildEmailHtml(data: {
   personalInfo: { fullName: string; email: string; phone: string };
   reservation: {
