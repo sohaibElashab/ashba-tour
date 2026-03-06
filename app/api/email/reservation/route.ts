@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -146,15 +146,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const transporter = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST,
-      port: Number(process.env.EMAIL_PORT),
-      secure: true,
-      auth: {
-        user: process.env.EMAIL_USERNAME,
-        pass: process.env.EMAIL_PASSWORD,
-      },
-    });
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     const serviceLabel =
       {
@@ -165,8 +157,8 @@ export async function POST(request: NextRequest) {
 
     const subject = `New ${serviceLabel} Reservation - ${data.personalInfo.fullName}`;
 
-    await transporter.sendMail({
-      from: `"Ashab Tours Reservations" <${process.env.EMAIL_USERNAME}>`,
+    await resend.emails.send({
+      from: "Ashab Tours <onboarding@resend.dev>",
       to: process.env.EMAIL_RECIPIENT || "reservationashabtours@gmail.com",
       replyTo: data.personalInfo.email,
       subject,
