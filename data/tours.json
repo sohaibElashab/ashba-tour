@@ -9,7 +9,10 @@
     "features": "Meet & Greet: Professional driver waiting at arrivals with a name sign.\r\n \r\n Flight Tracking: We monitor flight delays to ensure we are there when you land.\r\n \r\n Luggage Ready: Spacious trunks in our Vitos and Scudos for all suitcases.",
     "category": "ROUTES",
     "featured": true,
-    "slug": "city-center-airport-transfer"
+    "slug": "city-center-airport-transfer",
+    "titleFr": "Transfert aéroport du centre-ville",
+    "descriptionFr": "Profitez d'un service de transfert privé fluide et fiable avec des chauffeurs professionnels, des véhicules confortables et une prise en charge ponctuelle. Idéal pour des arrivées et des départs sans stress.",
+    "featuresFr": "Accueil personnalisé : Un chauffeur professionnel vous attend à l’arrivée avec une pancarte à votre nom.\r\n\r\nSuivi des vols : Nous surveillons les retards de vols afin d’être présents à votre arrivée.\r\n\r\nBagages prêts : Nos véhicules Vitos et Scudos sont équipés de coffres spacieux pour tous vos bagages."
   },
   {
     "id": "TransfertAptRakHotelExtérieur(BabAtlasTargaMaadenSamanah)",
@@ -21,7 +24,10 @@
     "features": "Fixed Pricing: No extra metered charges for zones outside the city center.\r\n \r\n GPS Navigation: Drivers familiar with remote villa and resort locations.",
     "category": "ROUTES",
     "featured": true,
-    "slug": "suburban-hotel-airport-transfer"
+    "slug": "suburban-hotel-airport-transfer",
+    "titleFr": "Transfert aéroport depuis un hôtel de banlieue",
+    "descriptionFr": "Profitez d'un service de transfert privé fluide et fiable avec des chauffeurs professionnels, des véhicules confortables et une prise en charge ponctuelle. Idéal pour des arrivées et des départs sans stress.",
+    "featuresFr": "Tarif fixe : Pas de supplément pour les zones hors centre-ville.\r\n\r\nNavigation GPS : Chauffeurs connaissant bien les villas et complexes hôteliers isolés."
   },
   {
     "id": "TransfertAptRakAgafayEtViceVersa",
@@ -33,7 +39,10 @@
     "features": "Desert Ready: Toyota 4x4s available to handle off-road camp entrances smoothly.\r\n \r\n Climate Control: Powerful A/C to handle the shift from city to desert heat.",
     "category": "ROUTES",
     "featured": true,
-    "slug": "airport-to-agafay-direct"
+    "slug": "airport-to-agafay-direct",
+    "titleFr": "Aéroport vers Agafay (direct)",
+    "descriptionFr": "Profitez d'un service de transfert privé fluide et fiable avec des chauffeurs professionnels, des véhicules confortables et une prise en charge ponctuelle. Idéal pour des arrivées et des départs sans stress.",
+    "featuresFr": "Prêts pour le désert : Des Toyota 4x4 sont disponibles pour franchir les entrées de campement en toute sécurité.\r\n\r\nClimatisation : Un système de climatisation performant assure un confort optimal lors du passage de la chaleur urbaine à la chaleur du désert."
   },
   {
     "id": "TransfertAptRakAgafayEtViceVersa",
@@ -45,7 +54,10 @@
     "features": "Desert Ready: Toyota 4x4s available to handle off-road camp entrances smoothly.\r\n \r\n Climate Control: Powerful A/C to handle the shift from city to desert heat.",
     "category": "ROUTES",
     "featured": true,
-    "slug": "marrakech-to-agafay-shuttle"
+    "slug": "marrakech-to-agafay-shuttle",
+    "titleFr": "Navette Marrakech-Agafay",
+    "descriptionFr": "Profitez d'un transfert confortable et direct vers le désert d'Agafay à bord de véhicules modernes conduits par des chauffeurs expérimentés. Idéal pour les bivouacs, les excursions et les séjours privés.",
+    "featuresFr": "Prêts pour le désert : Des Toyota 4x4 sont disponibles pour franchir les entrées de campement en toute sécurité.\r\n\r\nClimatisation : Un système de climatisation performant assure un confort optimal lors du passage de la chaleur urbaine à la chaleur du désert."
   },
   {
     "id": "TransfertRakLalaTakerkoustEtViceVersa",
@@ -57,7 +69,10 @@
     "features": "Mountain Power: Vehicles with strong engines to handle Atlas inclines comfortably.\r\n \r\n Photo Stops: Flexible drivers willing to pause for scenic mountain views.",
     "category": "ROUTES",
     "featured": false,
-    "slug": "lalla-takerkoust-lake-transfer"
+    "slug": "lalla-takerkoust-lake-transfer",
+    "titleFr": "\r\nTransfert au lac Lalla Takerkoust",
+    "descriptionFr": "Profitez d'un service de transfert privé fluide et fiable avec chauffeurs professionnels, véhicules confortables et prise en charge ponctuelle. Idéal pour des arrivées et des départs sans stress.",
+    "featuresFr": "Puissance en montagne : Des véhicules dotés de moteurs puissants pour affronter confortablement les pentes de l’Atlas.\r\n\r\nArrêts photos : Des chauffeurs flexibles, prêts à s’arrêter pour admirer les paysages de montagne."
   },
   {
     "id": "TransfertRakOuirganImlilEtViceVersa",
@@ -69,7 +84,10 @@
     "features": "Photo Stops: Flexible drivers willing to pause for scenic mountain views.",
     "category": "ROUTES",
     "featured": false,
-    "slug": "atlas-mountains-transfer"
+    "slug": "atlas-mountains-transfer",
+    "titleFr": "Transfert dans les montagnes de l'Atlas",
+    "descriptionFr": "Profitez d'un service de transfert privé fluide et fiable avec chauffeurs professionnels, véhicules confortables et prise en charge ponctuelle. Idéal pour des arrivées et des départs sans stress.",
+    "featuresFr": "Arrêts photos : Les conducteurs flexibles sont prêts à s’arrêter pour admirer les paysages de montagne."
   },
   {
     "id": "VisiteDeVille1/2Journée(9h00-13h00/14h00-18h00)",
@@ -81,7 +99,10 @@
     "features": "City Access: Our Vitos and Scudos can navigate narrow streets closer to the Medina.\r\n \r\n Local Knowledge: Drivers can recommend the best drop-off points for souks and monuments.",
     "category": "ROUTES",
     "featured": false,
-    "slug": "half-day-marrakech-tour"
+    "slug": "half-day-marrakech-tour",
+    "titleFr": "Visite d'une demi-journée à Marrakech",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Accès au centre-ville : Nos Vitos et Scudos peuvent circuler dans les rues étroites à proximité de la médina.\r\n\r\nConnaissance locale : Nos chauffeurs peuvent vous indiquer les meilleurs endroits pour vous déposer aux souks et aux monuments."
   },
   {
     "id": "VisiteDeVille1Journée(9h00 - 18h00 )",
@@ -93,7 +114,10 @@
     "features": "City Access: Our Vitos and Scudos can navigate narrow streets closer to the Medina.\r\n \r\n Local Knowledge: Drivers can recommend the best drop-off points for souks and monuments.",
     "category": "ROUTES",
     "featured": false,
-    "slug": "full-day-city-discovery"
+    "slug": "full-day-city-discovery",
+    "titleFr": "Découverte de la ville en une journée complète",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Accès au centre-ville : Nos Vitos et Scudos peuvent circuler dans les rues étroites à proximité de la médina.\r\n\r\nConnaissance locale : Nos chauffeurs peuvent vous indiquer les meilleurs endroits pour vous déposer aux souks et aux monuments."
   },
   {
     "id": "Transfert A/R_Golf(Amlkis,Maaden,Royal,Noria,Atlas)",
@@ -105,7 +129,10 @@
     "features": "Golf Bag Storage: Sprinters and Crafters offer XL storage for multiple golf bags without cramping passengers.\r\n \r\n Tee-Time Punctuality: Guaranteed on-time arrival so you never miss a slot.\r\n \r\n VIP Comfort: Relax in luxury leather seats (Vito/Sprinter) before and after your game.",
     "category": "ROUTES",
     "featured": false,
-    "slug": "city-golf-course-transfer"
+    "slug": "city-golf-course-transfer",
+    "titleFr": "Transfert du parcours de golf de la ville",
+    "descriptionFr": "Profitez d'un service de transfert privé fluide et fiable avec chauffeurs professionnels, véhicules confortables et prise en charge ponctuelle. Idéal pour des arrivées et des départs sans stress.",
+    "featuresFr": "Rangement pour sacs de golf : Les Sprinters et Crafter offrent un espace de rangement XL pour plusieurs sacs de golf sans gêner les passagers.\r\n\r\nPonctualité garantie : Arrivée à l’heure assurée pour ne jamais manquer votre départ.\r\n\r\nConfort VIP : Détendez-vous dans des sièges en cuir luxueux (Vito/Sprinter) avant et après votre partie."
   },
   {
     "id": "TransfertA/R_Golf(Samanah,RoyalPalm,Assoufid,Pgp,Ourika)",
@@ -117,7 +144,10 @@
     "features": "Golf Bag Storage: Sprinters and Crafters offer XL storage for multiple golf bags without cramping passengers.\r\n \r\n Tee-Time Punctuality: Guaranteed on-time arrival so you never miss a slot.\r\n \r\n VIP Comfort: Relax in luxury leather seats (Vito/Sprinter) before and after your game.",
     "category": "ROUTES",
     "featured": false,
-    "slug": "premium-golf-course-transfer"
+    "slug": "premium-golf-course-transfer",
+    "titleFr": "Transfert de parcours de golf premium",
+    "descriptionFr": "Profitez d'un service de transfert privé fluide et fiable avec chauffeurs professionnels, véhicules confortables et prise en charge ponctuelle. Idéal pour des arrivées et des départs sans stress.",
+    "featuresFr": "Rangement pour sacs de golf : Les Sprinters et Crafter offrent un espace de rangement XL pour plusieurs sacs de golf sans gêner les passagers.\r\n\r\nPonctualité garantie : Arrivée à l’heure assurée pour ne jamais manquer votre départ.\r\n\r\nConfort VIP : Détendez-vous dans des sièges en cuir luxueux (Vito/Sprinter) avant et après votre partie."
   },
   {
     "id": "TransfertA/RSoiréesAuCentreVille ",
@@ -129,7 +159,10 @@
     "features": "Safe Return: A pre-booked reliable driver ensures a safe trip home late at night.\r\n \r\n Group Coordination: Large capacity Sprinters keep your whole party in one vehicle.",
     "category": "ROUTES",
     "featured": false,
-    "slug": "city-night-out-transfer"
+    "slug": "city-night-out-transfer",
+    "titleFr": "Transfert nocturne en ville",
+    "descriptionFr": "Profitez d'un service de transfert privé fluide et fiable avec chauffeurs professionnels, véhicules confortables et prise en charge ponctuelle. Idéal pour des arrivées et des départs sans stress.",
+    "featuresFr": "Retour en toute sécurité : Un chauffeur fiable, réservé à l’avance, vous garantit un retour à domicile en toute sécurité, même tard dans la nuit.\r\n\r\nCoordination de groupe : Les Sprinters grande capacité permettent à tout votre groupe de voyager dans un seul véhicule."
   },
   {
     "id": "TransfertA/R_SoiréesExtérieur ",
@@ -141,7 +174,10 @@
     "features": "Safe Return: A pre-booked reliable driver ensures a safe trip home late at night.\r\n \r\n Group Coordination: Large capacity Sprinters keep your whole party in one vehicle.",
     "category": "ROUTES",
     "featured": false,
-    "slug": "suburban-evening-transfer"
+    "slug": "suburban-evening-transfer",
+    "titleFr": "Transfert en soirée en banlieue",
+    "descriptionFr": "Profitez d'un service de transfert privé fluide et fiable avec chauffeurs professionnels, véhicules confortables et prise en charge ponctuelle. Idéal pour des arrivées et des départs sans stress.",
+    "featuresFr": "Retour en toute sécurité : Un chauffeur fiable, réservé à l’avance, vous garantit un retour à domicile en toute sécurité, même tard dans la nuit.\r\n\r\nCoordination de groupe : Les Sprinters grande capacité permettent à tout votre groupe de voyager dans un seul véhicule."
   },
   {
     "id": "TransfertA/R_SoiréesAgafay ",
@@ -153,7 +189,10 @@
     "features": "Night Driving Safety: Experienced drivers trained for unlit desert roads.\r\n \r\n Warm Interiors: Heated vehicles waiting for you when the desert temperature drops at night.",
     "category": "ROUTES",
     "featured": false,
-    "slug": "agafay-dinner-experience-transfer"
+    "slug": "agafay-dinner-experience-transfer",
+    "titleFr": "Transfert pour l'expérience du dîner Agafay",
+    "descriptionFr": "Profitez d'un service de transfert privé fluide et fiable avec chauffeurs professionnels, véhicules confortables et prise en charge ponctuelle. Idéal pour des arrivées et des départs sans stress.",
+    "featuresFr": "Conduite de nuit en toute sécurité : Chauffeurs expérimentés formés à la conduite sur les routes désertiques non éclairées.\r\n\r\nIntérieurs chauffés : Véhicules chauffés à votre disposition lorsque la température chute la nuit."
   },
   {
     "id": "ExcursionAgafay ",
@@ -165,7 +204,10 @@
     "features": "Adventure Mode: 4x4 vehicles available for a more authentic, rugged experience.\r\n \r\n Family Friendly: Child seat compatible and plenty of space for strollers or gear.",
     "category": "Excursion",
     "featured": false,
-    "slug": "agafay-desert-day-trip"
+    "slug": "agafay-desert-day-trip",
+    "titleFr": "Excursion d'une journée dans le désert d'Agafay",
+    "descriptionFr": "Profitez d'un transfert confortable et direct vers le désert d'Agafay à bord de véhicules modernes conduits par des chauffeurs expérimentés. Idéal pour les bivouacs, les excursions et les séjours privés.",
+    "featuresFr": "Mode Aventure : Véhicules 4x4 disponibles pour une expérience plus authentique et tout-terrain.\r\n\r\nIdéal pour les familles : Compatible avec les sièges auto et offrant suffisamment d’espace pour les poussettes et les équipements."
   },
   {
     "id": "ExcursionLacLallaTakerkoust ",
@@ -177,19 +219,25 @@
     "features": "Panoramic Windows: Large windows in our Sprinters/Vitos for viewing the Atlas landscapes.\r\n \r\n Stability: Well-maintained suspension systems for winding mountain roads.",
     "category": "Excursion",
     "featured": false,
-    "slug": "lake-takerkoust-escape"
+    "slug": "lake-takerkoust-escape",
+    "titleFr": "Escapade au Lac Takerkoust",
+    "descriptionFr": "Détendez-vous et profitez d'un trajet paisible jusqu'au lac à bord de véhicules climatisés conduits par des chauffeurs professionnels, pour un voyage tout en douceur et agréable.",
+    "featuresFr": "Fenêtres panoramiques : Grandes fenêtres dans nos Sprinter/Vito pour admirer les paysages de l’Atlas.\r\n\r\nStabilité : Systèmes de suspension bien entretenus pour une conduite optimale sur les routes de montagne sinueuses."
   },
   {
-    "id": "ExcursionTerreD_amanar",
+    "id": "ExcursionTerresdAmanar",
     "title": "Terresd'Amanar Adventure",
     "description": "Premium private transport service with modern vehicles and experienced drivers. Designed for comfort, safety, and reliability for all your travel needs.",
     "vehicleType": "Mercedes Vito, Fiat Scudo, Mercedes Sprinter, VW Crafter,Toyota 4x4",
     "capacity": "1 to 20",
-    "image": "/media/excursionterred_amanar.png",
+    "image": "/media/ExcursionTerredamanar.png",
     "features": "Adventure Mode: 4x4 vehicles available for a more authentic, rugged experience.\r\n \r\n Family Friendly: Child seat compatible and plenty of space for strollers or gear.",
     "category": "Excursion",
     "featured": false,
-    "slug": "terresd-amanar-adventure"
+    "slug": "terresd-amanar-adventure",
+    "titleFr": "Aventure de Terresd'Amanar",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Mode Aventure : Véhicules 4x4 disponibles pour une expérience plus authentique et tout-terrain.\r\n\r\nIdéal pour les familles : Compatible avec les sièges auto et offrant suffisamment d’espace pour les poussettes et les équipements."
   },
   {
     "id": "ExcursionOurikaOuirganImlilOukaimden",
@@ -201,7 +249,10 @@
     "features": "Panoramic Windows: Large windows in our Sprinters/Vitos for viewing the Atlas landscapes.\r\n \r\n Stability: Well-maintained suspension systems for winding mountain roads.",
     "category": "Excursion",
     "featured": false,
-    "slug": "high-atlas-excursion"
+    "slug": "high-atlas-excursion",
+    "titleFr": "Excursion Haut Atlas",
+    "descriptionFr": "Partez en toute sécurité à la découverte des montagnes de l'Atlas à bord de véhicules puissants et spacieux. Notre service vous garantit confort, flexibilité et des arrêts pittoresques tout au long du trajet.",
+    "featuresFr": "Fenêtres panoramiques : Grandes fenêtres dans nos Sprinter/Vito pour admirer les paysages de l’Atlas.\r\n\r\nStabilité : Systèmes de suspension bien entretenus pour une conduite optimale sur les routes de montagne sinueuses."
   },
   {
     "id": "Excursion3Vallées (Ourika + Asni + Lala Takerkoust)",
@@ -213,7 +264,10 @@
     "features": "Panoramic Windows: Large windows in our Sprinters/Vitos for viewing the Atlas landscapes.\r\n \r\n Stability: Well-maintained suspension systems for winding mountain roads.",
     "category": "Excursion",
     "featured": false,
-    "slug": "three-valleys-tour"
+    "slug": "three-valleys-tour",
+    "titleFr": "Tour des Trois Vallées",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Fenêtres panoramiques : Grandes fenêtres dans nos Sprinter/Vito pour admirer les paysages de l’Atlas.\r\n\r\nStabilité : Systèmes de suspension bien entretenus pour une conduite optimale sur les routes de montagne sinueuses."
   },
   {
     "id": "Excursion3Vallées+Agafay",
@@ -225,7 +279,10 @@
     "features": "Panoramic Windows: Large windows in our Sprinters/Vitos for viewing the Atlas landscapes.\r\n \r\n Stability: Well-maintained suspension systems for winding mountain roads.",
     "category": "Excursion",
     "featured": false,
-    "slug": "3valleys-desert-combo"
+    "slug": "3valleys-desert-combo",
+    "titleFr": "Combinaison 3 Vallées et Désert",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Fenêtres panoramiques : Grandes fenêtres dans nos Sprinter/Vito pour admirer les paysages de l’Atlas.\r\n\r\nStabilité : Systèmes de suspension bien entretenus pour une conduite optimale sur les routes de montagne sinueuses."
   },
   {
     "id": "ExcursionEssaouira ",
@@ -237,7 +294,10 @@
     "features": "Highway Comfort: Cruise control and stable highway driving for longer 2-3 hour trips.\r\n \r\n Refreshment Stops: Drivers know the best clean rest stops and cafes along the route.",
     "category": "Excursion",
     "featured": false,
-    "slug": "essaouira-coastal-trip"
+    "slug": "essaouira-coastal-trip",
+    "titleFr": "Excursion côtière à Essaouira",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Confort sur autoroute : Régulateur de vitesse et conduite stable sur autoroute pour les longs trajets de 2 à 3 heures.\r\n\r\nArrêts-repas : Les conducteurs connaissent les meilleures aires de repos et cafés propres le long du parcours."
   },
   {
     "id": "ExcursionOuzoud ",
@@ -249,7 +309,10 @@
     "features": "Highway Comfort: Cruise control and stable highway driving for longer 2-3 hour trips.\r\n \r\n Refreshment Stops: Drivers know the best clean rest stops and cafes along the route.",
     "category": "Excursion",
     "featured": false,
-    "slug": "ouzoud-waterfalls-trip"
+    "slug": "ouzoud-waterfalls-trip",
+    "titleFr": "Excursion aux chutes d'Ouzoud",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Confort sur autoroute : Régulateur de vitesse et conduite stable sur autoroute pour les longs trajets de 2 à 3 heures.\r\n\r\nArrêts-repas : Les conducteurs connaissent les meilleures aires de repos et cafés propres le long du parcours."
   },
   {
     "id": "ExcursionOualidia ",
@@ -261,7 +324,10 @@
     "features": "Highway Comfort: Cruise control and stable highway driving for longer 2-3 hour trips.\r\n \r\n Refreshment Stops: Drivers know the best clean rest stops and cafes along the route.",
     "category": "Excursion",
     "featured": false,
-    "slug": "oualidia-lagoon-escape"
+    "slug": "oualidia-lagoon-escape",
+    "titleFr": "Escapade à la Lagune d'Oualidia",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Confort sur autoroute : Régulateur de vitesse et conduite stable sur autoroute pour les longs trajets de 2 à 3 heures.\r\n\r\nArrêts-repas : Les conducteurs connaissent les meilleures aires de repos et cafés propres le long du parcours."
   },
   {
     "id": "ExcursionOuarzazate-AitBenHaddou",
@@ -273,7 +339,10 @@
     "features": "Tichka Pass Mastery: Drivers experienced in navigating the high Tizi n'Tichka curves safely.\r\n \r\n Power & Safety: High-torque vehicles designed for steep mountain climbing",
     "category": "Excursion",
     "featured": false,
-    "slug": "ouarzazate-kasbahs-tour"
+    "slug": "ouarzazate-kasbahs-tour",
+    "titleFr": "Circuit Ouarzazate et kasbahs",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Maîtrise du col de Tichka : Des conducteurs expérimentés, capables de négocier en toute sécurité les virages serrés du col de Tizi n'Tichka.\r\n\r\nPuissance et sécurité : Des véhicules à couple élevé, conçus pour les ascensions de montagnes abruptes."
   },
   {
     "id": "ExcursionElJadida ",
@@ -285,7 +354,10 @@
     "features": "Highway Comfort: Cruise control and stable highway driving for longer 2-3 hour trips.\r\n \r\n Refreshment Stops: Drivers know the best clean rest stops and cafes along the route.",
     "category": "Excursion",
     "featured": false,
-    "slug": "el-jadida-heritage-trip"
+    "slug": "el-jadida-heritage-trip",
+    "titleFr": "Voyage au patrimoine d'El Jadida",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Confort sur autoroute : Régulateur de vitesse et conduite stable sur autoroute pour les longs trajets de 2 à 3 heures.\r\n\r\nArrêts-repas : Les conducteurs connaissent les meilleures aires de repos et cafés propres le long du parcours."
   },
   {
     "id": "ExcursionAgadir",
@@ -297,7 +369,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "Excursion",
     "featured": false,
-    "slug": "agadir-beach-day"
+    "slug": "agadir-beach-day",
+    "titleFr": "Journée à la plage à Agadir",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "ExcursionCasablanca",
@@ -309,7 +384,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "Excursion",
     "featured": false,
-    "slug": "casablanca-highlights-tour"
+    "slug": "casablanca-highlights-tour",
+    "titleFr": "Visite des points forts de Casablanca",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "ExcursionTaghazoute",
@@ -321,7 +399,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "Excursion",
     "featured": false,
-    "slug": "taghazout-surf-village-trip"
+    "slug": "taghazout-surf-village-trip",
+    "titleFr": "Excursion au village de surf de Taghazout",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "ExcursionRabat",
@@ -333,7 +414,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "Excursion",
     "featured": false,
-    "slug": "rabat-capital-tour"
+    "slug": "rabat-capital-tour",
+    "titleFr": "Visite de la capitale Rabat",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "TransfertRakEssaouiraEtViceVersa",
@@ -345,7 +429,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "marrakech-to-essaouira"
+    "slug": "marrakech-to-essaouira",
+    "titleFr": "De Marrakech à Essaouira",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "TransfertRakOualidiaEtViceVersa",
@@ -357,7 +444,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "marrakech-to-oualidia"
+    "slug": "marrakech-to-oualidia",
+    "titleFr": "Marrakech à Oualidia",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "TransfertRakOuarzazateEtViceVersa",
@@ -369,7 +459,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "marrakech-to-ouarzazate"
+    "slug": "marrakech-to-ouarzazate",
+    "titleFr": "De Marrakech à Ouarzazate",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "TransfertRakElJadidaEtViceVersa",
@@ -381,7 +474,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "marrakech-to-el-jadida"
+    "slug": "marrakech-to-el-jadida",
+    "titleFr": "Marrakech à El Jadida",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "TransfertRakAéroportCasaEtViceVersa",
@@ -393,7 +489,9 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "casablanca-airport-shuttle"
+    "slug": "casablanca-airport-shuttle",
+    "titleFr": "Navette Aéroport de Casablanca",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements."
   },
   {
     "id": "TransfertRakCasablancaEtViceVersa",
@@ -405,7 +503,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "marrakech-to-casablanca-city"
+    "slug": "marrakech-to-casablanca-city",
+    "titleFr": "Marrakech à la ville de Casablanca",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "TransfertRakAgadirEtViceVersa",
@@ -417,7 +518,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "marrakech-to-agadir"
+    "slug": "marrakech-to-agadir",
+    "titleFr": "Marrakech à Agadir",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "TransfertRakTaghazouteEtViceVersa",
@@ -429,7 +533,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "marrakech-to-taghazout"
+    "slug": "marrakech-to-taghazout",
+    "titleFr": "Marrakech à Taghazout",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "TransfertRakRabatEtViceVersa",
@@ -441,7 +548,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "marrakech-to-rabat"
+    "slug": "marrakech-to-rabat",
+    "titleFr": "Marrakech à Rabat",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "TransfertRakZagoraEtViceVersa",
@@ -453,7 +563,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "marrakech-to-zagora"
+    "slug": "marrakech-to-zagora",
+    "titleFr": "De Marrakech à Zagora",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "TransfertRakErfoudMerzougaetViceVersa",
@@ -465,7 +578,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "marrakech-to-merzouga-dunes"
+    "slug": "marrakech-to-merzouga-dunes",
+    "titleFr": "Marrakech aux dunes de Merzouga",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "TransfertRakFesEtViceVersa",
@@ -477,7 +593,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "marrakech-to-fes"
+    "slug": "marrakech-to-fes",
+    "titleFr": "Marrakech à Fès",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "TransfertRakTangerEtViceVersa",
@@ -489,7 +608,10 @@
     "features": "Legroom: Executive seating space in Vitos and Sprinters for maximum comfort on long hauls.\r\n \r\n On-Board Wi-Fi: (Optional feature to advertise) Stay connected during the 3+ hour drive.\r\n \r\n Toll Roads Included: We use the fastest highway routes (Autoroute) for efficiency.",
     "category": "transfert vice-versa",
     "featured": false,
-    "slug": "marrakech-to-tangier"
+    "slug": "marrakech-to-tangier",
+    "titleFr": "Marrakech à Tanger",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Espace pour les jambes : Sièges spacieux de type « Executive » dans les Vitos et Sprinters pour un confort optimal sur les longs trajets.\r\n\r\nWi-Fi à bord : (Option à visée publicitaire) Restez connecté pendant les plus de 3 heures de trajet.\r\n\r\nAutoroutes incluses : Nous empruntons les itinéraires autoroutiers les plus rapides pour une efficacité maximale."
   },
   {
     "id": "MiseADispo1/2JournéeARak(8h00-13h00/14h00-18h00) ",
@@ -501,7 +623,10 @@
     "features": "Total Flexibility: Change your itinerary instantly; the driver follows your schedule.\r\n \r\n Privacy: Tinted windows and discreet drivers for VIP clients.\r\n \r\n Door-to-Door: Wait-and-return service at every shop, restaurant, or meeting.",
     "category": "mise a dispo",
     "featured": false,
-    "slug": "half-day-chauffeur-service"
+    "slug": "half-day-chauffeur-service",
+    "titleFr": "Service de chauffeur à la demi-journée",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Flexibilité totale : Modifiez votre itinéraire instantanément ; le chauffeur s’adapte à votre emploi du temps.\r\n\r\nConfidentialité garantie : Vitres teintées et chauffeurs discrets pour les clients VIP.\r\n\r\nService porte-à-porte : Prise en charge et retour à chaque magasin, restaurant ou lieu de rendez-vous."
   },
   {
     "id": "MiseADispo1JournéeARak (8h00 - 18h00 ) ",
@@ -513,7 +638,10 @@
     "features": "Total Flexibility: Change your itinerary instantly; the driver follows your schedule.\r\n \r\n Privacy: Tinted windows and discreet drivers for VIP clients.\r\n \r\n Door-to-Door: Wait-and-return service at every shop, restaurant, or meeting.",
     "category": "mise a dispo",
     "featured": false,
-    "slug": "full-day-private-driver"
+    "slug": "full-day-private-driver",
+    "titleFr": "Chauffeur privé à la journée",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Flexibilité totale : Modifiez votre itinéraire instantanément ; le chauffeur s’adapte à votre emploi du temps.\r\n\r\nConfidentialité garantie : Vitres teintées et chauffeurs discrets pour les clients VIP.\r\n\r\nService porte-à-porte : Prise en charge et retour à chaque magasin, restaurant ou lieu de rendez-vous."
   },
   {
     "id": "MiseAdispo1Journée+SoiréeRakA(8h00 - 23h00 ) ",
@@ -525,7 +653,10 @@
     "features": "Total Flexibility: Change your itinerary instantly; the driver follows your schedule.\r\n \r\n Privacy: Tinted windows and discreet drivers for VIP clients.\r\n \r\n Door-to-Door: Wait-and-return service at every shop, restaurant, or meeting.",
     "category": "mise a dispo",
     "featured": false,
-    "slug": "day-night-vip-disposal"
+    "slug": "day-night-vip-disposal",
+    "titleFr": "Mise a dispo VIP jour et nuit",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Flexibilité totale : Modifiez votre itinéraire instantanément ; le chauffeur s’adapte à votre emploi du temps.\r\n\r\nConfidentialité garantie : Vitres teintées et chauffeurs discrets pour les clients VIP.\r\n\r\nService porte-à-porte : Prise en charge et retour à chaque magasin, restaurant ou lieu de rendez-vous."
   },
   {
     "id": "Circuit2JoursZagora",
@@ -537,7 +668,10 @@
     "features": "Rugged Durability: Toyota 4x4s specifically chosen for sand and rocky terrain reliability.\r\n \r\n Expedition Gear: ample roof or trunk space for multi-day luggage and supplies.",
     "category": "circuit",
     "featured": false,
-    "slug": "2-day-zagora-desert-tour"
+    "slug": "2-day-zagora-desert-tour",
+    "titleFr": "Circuit de 2 jours dans le désert de Zagora",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Robustesse à toute épreuve : Les 4x4 Toyota sont spécialement conçus pour une fiabilité à toute épreuve sur le sable et les terrains rocailleux.\r\n\r\nÉquipement pour expéditions : Grand espace de chargement sur le toit et dans le coffre pour les bagages et les provisions nécessaires pour plusieurs jours."
   },
   {
     "id": "Circuit3JoursMerzouga",
@@ -549,7 +683,10 @@
     "features": "Rugged Durability: Toyota 4x4s specifically chosen for sand and rocky terrain reliability.\r\n \r\n Expedition Gear: ample roof or trunk space for multi-day luggage and supplies.",
     "category": "circuit",
     "featured": false,
-    "slug": "3-day-merzouga-dunes-tour"
+    "slug": "3-day-merzouga-dunes-tour",
+    "titleFr": "Circuit de 3 jours dans les dunes de Merzouga",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Robustesse à toute épreuve : Les 4x4 Toyota sont spécialement conçus pour une fiabilité à toute épreuve sur le sable et les terrains rocailleux.\r\n\r\nÉquipement pour expéditions : Grand espace de chargement sur le toit et dans le coffre pour les bagages et les provisions nécessaires pour plusieurs jours."
   },
   {
     "id": "Circuit3JoursFès",
@@ -561,7 +698,10 @@
     "features": "Touring Comfort: Smooth suspension for days with 4-5 hours of driving.\r\n \r\n Multilingual Drivers: Drivers who can assist with simple translations and local tips in different cities.",
     "category": "circuit",
     "featured": false,
-    "slug": "3-day-fes-cultural-route"
+    "slug": "3-day-fes-cultural-route",
+    "titleFr": "Circuit culturel de Fès en 3 jours",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Confort optimal pour les longs trajets : Suspension souple pour des journées de conduite de 4 à 5 heures.\r\n\r\nChauffeurs multilingues : Chauffeurs pouvant vous aider pour des traductions simples et vous donner des conseils locaux dans différentes villes."
   },
   {
     "id": "Circuit4JoursMerzouga",
@@ -573,7 +713,10 @@
     "features": "Rugged Durability: Toyota 4x4s specifically chosen for sand and rocky terrain reliability.\r\n \r\n Expedition Gear: ample roof or trunk space for multi-day luggage and supplies.",
     "category": "circuit",
     "featured": false,
-    "slug": "4-day-deep-south-circuit"
+    "slug": "4-day-deep-south-circuit",
+    "titleFr": "Circuit de 4 jours dans le Grand Sud",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Robustesse à toute épreuve : Les 4x4 Toyota sont spécialement conçus pour une fiabilité à toute épreuve sur le sable et les terrains rocailleux.\r\n\r\nÉquipement pour expéditions : Grand espace de chargement sur le toit et dans le coffre pour les bagages et les provisions nécessaires pour plusieurs jours."
   },
   {
     "id": "Circuit4JoursFès",
@@ -585,7 +728,10 @@
     "features": "Touring Comfort: Smooth suspension for days with 4-5 hours of driving.\r\n \r\n Multilingual Drivers: Drivers who can assist with simple translations and local tips in different cities.",
     "category": "circuit",
     "featured": false,
-    "slug": "4-day-imperial-cities-circuit"
+    "slug": "4-day-imperial-cities-circuit",
+    "titleFr": "Circuit des villes impériales en 4 jours",
+    "descriptionFr": "Service de transport privé haut de gamme avec véhicules modernes et chauffeurs expérimentés. Conçu pour votre confort, votre sécurité et votre fiabilité, pour tous vos déplacements.",
+    "featuresFr": "Confort optimal pour les longs trajets : Suspension souple pour des journées de conduite de 4 à 5 heures.\r\n\r\nChauffeurs multilingues : Chauffeurs pouvant vous aider pour des traductions simples et vous donner des conseils locaux dans différentes villes."
   },
   {
     "id": "ForfaitCircuitsParJour(Minimum06Jours)",
@@ -597,7 +743,9 @@
     "features": "Touring Comfort: Smooth suspension for days with 4-5 hours of driving.\r\n \r\n Multilingual Drivers: Drivers who can assist with simple translations and local tips in different cities.",
     "category": "circuit",
     "featured": false,
-    "slug": "daily-circuit-rate"
+    "slug": "daily-circuit-rate",
+    "titleFr": "Tarif journalier du circuit",
+    "featuresFr": "Confort optimal pour les longs trajets : Suspension souple pour des journées de conduite de 4 à 5 heures.\r\n\r\nChauffeurs multilingues : Chauffeurs pouvant vous aider pour des traductions simples et vous donner des conseils locaux dans différentes villes."
   },
   {
     "id": "ForfaitCircuitsEnKilométrage",
@@ -609,6 +757,8 @@
     "features": "Touring Comfort: Smooth suspension for days with 4-5 hours of driving.\r\n \r\n Multilingual Drivers: Drivers who can assist with simple translations and local tips in different cities.",
     "category": "circuit",
     "featured": false,
-    "slug": "mileage-based-rate"
+    "slug": "mileage-based-rate",
+    "titleFr": "Tarif basé sur le kilométrage",
+    "featuresFr": "Confort optimal pour les longs trajets : Suspension souple pour des journées de conduite de 4 à 5 heures.\r\n\r\nChauffeurs multilingues : Chauffeurs pouvant vous aider pour des traductions simples et vous donner des conseils locaux dans différentes villes."
   }
 ]

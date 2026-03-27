@@ -7,11 +7,13 @@ import { useTranslation } from "react-i18next";
 import { MapPin, Users, Briefcase } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import { useLocalizedData } from "@/hooks/use-localized-data";
 
 export default function ToursPage() {
   const allTours = getAllTours();
   const categories = getTourCategories();
   const { t } = useTranslation();
+  const { localizedField } = useLocalizedData();
 
   const [selectedCategory, setSelectedCategory] = useState("All");
 
@@ -31,11 +33,10 @@ export default function ToursPage() {
       <div className="pt-24 pb-16 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4 font-display">
-            All Tours & Transfers
+            {t("tours.pageTitle")}
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore our wide range of services, from airport transfers to desert
-            excursions.
+            {t("tours.pageSubtitle")}
           </p>
         </div>
 
@@ -65,7 +66,7 @@ export default function ToursPage() {
               <div className="relative h-48 bg-muted">
                 <img
                   src={tour.image || "/placeholder.svg"}
-                  alt={tour.title}
+                  alt={localizedField(tour, "title")}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">
@@ -76,12 +77,12 @@ export default function ToursPage() {
               <div className="p-5 flex-1 flex flex-col">
                 <h3
                   className="text-xl font-bold mb-2 line-clamp-2"
-                  title={tour.title}
+                  title={localizedField(tour, "title")}
                 >
-                  {tour.title}
+                  {localizedField(tour, "title")}
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4 line-clamp-3 flex-1">
-                  {tour.description}
+                  {localizedField(tour, "description")}
                 </p>
 
                 <div className="mt-auto">
@@ -107,7 +108,7 @@ export default function ToursPage() {
 
                   <Link href={`/tours/${tour.slug}`} className="block w-full">
                     <button className="w-full py-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg transition-colors">
-                      View Details
+                      {t("button.viewDetails")}
                     </button>
                   </Link>
                 </div>

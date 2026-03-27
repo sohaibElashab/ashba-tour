@@ -16,6 +16,7 @@ import { useTranslation } from "react-i18next";
 import { useLocale } from "@/contexts/locale-context";
 import { convertAndFormat } from "@/lib/currency";
 import { getAllTours, getFleet, type Tour, type Vehicle } from "@/lib/data";
+import { useLocalizedData } from "@/hooks/use-localized-data";
 
 interface ReservationFormProps {
   type?: "general" | "fleet" | "tour";
@@ -30,6 +31,7 @@ export default function ReservationForm({
 }: ReservationFormProps) {
   const { t } = useTranslation();
   const { currency } = useLocale();
+  const { localizedField } = useLocalizedData();
   const fleet = getFleet();
   const tours = getAllTours();
 
@@ -78,9 +80,9 @@ export default function ReservationForm({
   }, [type, defaultVehicleId, defaultTourId]);
 
   const extrasOptions = [
-    { id: "child-seat", name: "Child Seat", price: 15 },
-    { id: "wifi", name: "Wi-Fi", price: 5 },
-    { id: "water", name: "Water & Snacks", price: 10 },
+    { id: "child-seat", name: t("form.extraChildSeat"), price: 15 },
+    { id: "wifi", name: t("form.extraWifi"), price: 5 },
+    { id: "water", name: t("form.extraWater"), price: 10 },
   ];
 
   // Simple price estimation logic (can be made more complex)
@@ -144,7 +146,7 @@ export default function ReservationForm({
         time: formData.time,
         passengers: formData.passengers,
         vehicleName: selectedVehicle?.model || "",
-        tourName: selectedTour?.title || "",
+        tourName: selectedTour ? localizedField(selectedTour, "title") : "",
         tourCategory: selectedTour?.category || "",
         extras: formData.extras.map(
           (id) => extrasOptions.find((e) => e.id === id)?.name || id,
@@ -163,9 +165,7 @@ export default function ReservationForm({
       if (!res.ok) throw new Error("Failed to send reservation");
       setSubmitted(true);
     } catch {
-      setSubmitError(
-        "Could not send your reservation. Please try again or contact us via WhatsApp.",
-      );
+      setSubmitError(t("form.submitError"));
     } finally {
       setSubmitting(false);
     }
@@ -180,16 +180,15 @@ export default function ReservationForm({
           <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
             <Briefcase size={32} />
           </div>
-          <h3 className="text-2xl font-bold text-gray-800">Request Sent!</h3>
-          <p className="text-gray-600">
-            Thank you for your booking request. Our team will review it and
-            contact you via WhatsApp shortly to confirm availability and price.
-          </p>
+          <h3 className="text-2xl font-bold text-gray-800">
+            {t("form.requestSent")}
+          </h3>
+          <p className="text-gray-600">{t("form.requestSentMessage")}</p>
           <button
             onClick={() => setSubmitted(false)}
             className="text-primary font-medium hover:underline mt-4"
           >
-            Send another request
+            {t("button.sendAnother")}
           </button>
         </div>
       ) : (
@@ -197,7 +196,7 @@ export default function ReservationForm({
           <div className="flex flex-col md:flex-row justify-between items-center mb-6">
             {type === "general" && (
               <h3 className="text-xl font-bold text-gray-800">
-                Book Your Trip
+                {t("form.bookTrip")}
               </h3>
             )}
             {type === "general" && (
@@ -209,7 +208,7 @@ export default function ReservationForm({
                   }
                   className={`px-3 py-1 text-sm rounded-full transition-colors ${formData.serviceType === "transfer" ? "bg-primary text-white" : "bg-gray-100 text-gray-600 hover:bg-gray-200"}`}
                 >
-                  Transfer
+                  {t("form.transfer")}
                 </button>
                 <button
                   type="button"
@@ -218,7 +217,7 @@ export default function ReservationForm({
                   }
                   className={`px-3 py-1 text-sm rounded-full transition-colors ${formData.serviceType === "tour" ? "bg-primary text-white" : "bg-gray-100 text-gray-600 hover:bg-gray-200"}`}
                 >
-                  Tour
+                  {t("form.tour")}
                 </button>
               </div>
             )}
@@ -228,7 +227,7 @@ export default function ReservationForm({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="space-y-2">
               <label className="text-sm font-medium text-foreground">
-                Full Name
+                {t("form.name")}
               </label>
               <input
                 required
@@ -237,13 +236,13 @@ export default function ReservationForm({
                 onChange={(e) =>
                   setFormData({ ...formData, fullName: e.target.value })
                 }
-                placeholder="Your full name"
+                placeholder={t("form.namePlaceholder")}
                 className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all bg-gray-50 focus:bg-white"
               />
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-foreground">
-                Email
+                {t("form.email")}
               </label>
               <input
                 required
@@ -252,13 +251,13 @@ export default function ReservationForm({
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
                 }
-                placeholder="you@example.com"
+                placeholder={t("form.emailPlaceholder")}
                 className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all bg-gray-50 focus:bg-white"
               />
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-foreground">
-                Phone
+                {t("form.phone")}
               </label>
               <input
                 required
@@ -267,7 +266,7 @@ export default function ReservationForm({
                 onChange={(e) =>
                   setFormData({ ...formData, phone: e.target.value })
                 }
-                placeholder="+212 6XX XXX XXX"
+                placeholder={t("form.phonePlaceholder")}
                 className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all bg-gray-50 focus:bg-white"
               />
             </div>
@@ -287,7 +286,7 @@ export default function ReservationForm({
                 onChange={(e) =>
                   setFormData({ ...formData, pickup: e.target.value })
                 }
-                placeholder="Airport, Hotel, or specific location"
+                placeholder={t("form.pickupPlaceholder")}
                 className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all bg-gray-50 focus:bg-white"
               />
             </div>
@@ -306,7 +305,7 @@ export default function ReservationForm({
                   onChange={(e) =>
                     setFormData({ ...formData, dropoff: e.target.value })
                   }
-                  placeholder="Destination"
+                  placeholder={t("form.dropoffPlaceholder")}
                   className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all bg-gray-50 focus:bg-white"
                 />
               </div>
@@ -316,20 +315,20 @@ export default function ReservationForm({
               <div className="space-y-2">
                 <label className="text-sm font-medium text-foreground flex items-center gap-2">
                   <MapPin size={16} className="text-primary" />
-                  Select Tour
+                  {t("form.selectTour")}
                 </label>
                 <select
                   value={formData.tour}
                   onChange={(e) =>
                     setFormData({ ...formData, tour: e.target.value })
                   }
-                  disabled={type === "tour"} // Lock if on tour page
+                  disabled={type === "tour"}
                   className={`w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all ${type === "tour" ? "bg-gray-100 cursor-not-allowed" : "bg-gray-50 focus:bg-white"}`}
                 >
-                  <option value="">Select a tour...</option>
+                  <option value="">{t("form.selectTourPlaceholder")}</option>
                   {tours.map((tour) => (
                     <option key={tour.id} value={tour.id}>
-                      {tour.title}
+                      {localizedField(tour, "title")}
                     </option>
                   ))}
                 </select>
@@ -383,7 +382,7 @@ export default function ReservationForm({
               >
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "10+"].map((n) => (
                   <option key={n} value={n}>
-                    {n} {n === 1 ? "Pax" : "Pax"}
+                    {n} {t("form.pax")}
                   </option>
                 ))}
               </select>
@@ -442,7 +441,7 @@ export default function ReservationForm({
                         {vehicle.model}
                       </div>
                       <div className="text-xs sm:text-sm opacity-90 font-medium bg-white/20 px-2 py-0.5 rounded-full backdrop-blur-xs">
-                        {vehicle.places} Seats
+                        {vehicle.places} {t("form.seats")}
                       </div>
                       {formData.vehicle === vehicle.id && (
                         <div className="absolute top-2 right-2 bg-white text-primary rounded-full p-0.5">
@@ -466,7 +465,7 @@ export default function ReservationForm({
                 el?.classList.toggle("hidden");
               }}
             >
-              + Add Extras (Child Seat, Wi-Fi...)
+              {t("form.addExtras")}
             </button>
             <div className="hidden space-y-2 bg-gray-50 p-3 rounded-lg transition-all">
               {extrasOptions.map((extra) => (
@@ -496,7 +495,7 @@ export default function ReservationForm({
               onChange={(e) =>
                 setFormData({ ...formData, notes: e.target.value })
               }
-              placeholder="Any special requests? (Flight number, excess luggage, etc.)"
+              placeholder={t("form.notesPlaceholder")}
               rows={2}
               className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none bg-gray-50 focus:bg-white"
             />
@@ -507,12 +506,14 @@ export default function ReservationForm({
             <div className="flex items-center justify-between">
               <span className="text-lg font-semibold text-foreground flex items-center gap-2">
                 <Calculator size={18} className="text-primary" />
-                {estimatedTotal ? "Estimated Total" : "Quote Request"}
+                {estimatedTotal
+                  ? t("form.estimatedTotal")
+                  : t("form.quoteRequest")}
               </span>
               <span className="text-2xl font-bold text-primary">
                 {estimatedTotal
                   ? convertAndFormat(estimatedTotal, "USD", currency)
-                  : "On Demand"}
+                  : t("form.onDemand")}
               </span>
             </div>
           </div>
@@ -531,15 +532,14 @@ export default function ReservationForm({
             className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-4 rounded-lg transition-all transform hover:scale-[1.02] active:scale-95 shadow-lg flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none"
           >
             {submitting
-              ? "Sending..."
+              ? t("form.sending")
               : formData.serviceType === "tour" || !estimatedTotal
-                ? "Request Quote & Availability"
-                : "Book Now"}
+                ? t("form.requestQuote")
+                : t("button.bookNow")}
           </button>
 
           <p className="text-xs text-muted-foreground text-center">
-            Free cancellation up to 24 hours before pickup. Instant confirmation
-            via WhatsApp.
+            {t("form.disclaimer")}
           </p>
         </form>
       )}

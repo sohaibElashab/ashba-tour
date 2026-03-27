@@ -9,7 +9,7 @@ const reviews = [
     name: "Sarah Mitchell",
     location: "London, UK",
     rating: 5,
-    text: "Exceptional service! Our driver was knowledgeable, courteous, and made our trip to the desert unforgettable.",
+    textKey: "reviews.review1",
     image: "/woman-profile-picture.jpg",
   },
   {
@@ -17,7 +17,7 @@ const reviews = [
     name: "Ahmed Hassan",
     location: "Paris, France",
     rating: 5,
-    text: "Professional, clean car, and very comfortable. Highly recommend for anyone visiting Marrakech!",
+    textKey: "reviews.review2",
     image: "/man-profile-picture.jpg",
   },
   {
@@ -25,7 +25,7 @@ const reviews = [
     name: "Emma Johnson",
     location: "New York, USA",
     rating: 5,
-    text: "Best transport service in Marrakech. Reliable, affordable, and they go above and beyond to help.",
+    textKey: "reviews.review3",
     image: "/woman-smiling-profile.jpg",
   },
 ];
@@ -66,7 +66,7 @@ export default function Reviews() {
 
               {/* Text */}
               <p className="text-foreground mb-6 leading-relaxed">
-                "{review.text}"
+                "{t(review.textKey)}"
               </p>
 
               {/* Author */}

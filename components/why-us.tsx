@@ -3,36 +3,24 @@
 import { Check, Shield, Clock, Users, MapPin, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-const features = [
-  {
-    icon: Clock,
-    title: "Punctual Service",
-    description: "Always on time, every time. We respect your schedule.",
-  },
-  {
-    icon: Shield,
-    title: "Licensed & Insured",
-    description: "Full insurance coverage and professional credentials",
-  },
+const featureKeys = [
+  { icon: Clock, titleKey: "whyUs.punctual", descKey: "whyUs.punctualDesc" },
+  { icon: Shield, titleKey: "whyUs.licensed", descKey: "whyUs.licensedDesc" },
   {
     icon: Users,
-    title: "Professional Drivers",
-    description: "Courteous, experienced drivers fluent in multiple languages",
+    titleKey: "whyUs.professional",
+    descKey: "whyUs.professionalDesc",
   },
   {
     icon: MapPin,
-    title: "Door-to-Door Service",
-    description: "Pickup and drop-off at any location in Marrakech",
+    titleKey: "whyUs.doorToDoor",
+    descKey: "whyUs.doorToDoorDesc",
   },
-  {
-    icon: Phone,
-    title: "24/7 Support",
-    description: "Round-the-clock customer service via WhatsApp and phone",
-  },
+  { icon: Phone, titleKey: "whyUs.support", descKey: "whyUs.supportDesc" },
   {
     icon: Check,
-    title: "Clean Vehicles",
-    description: "Spotless interiors and well-maintained modern cars",
+    titleKey: "whyUs.cleanVehicles",
+    descKey: "whyUs.cleanVehiclesDesc",
   },
 ];
 
@@ -54,7 +42,7 @@ export default function WhyUs() {
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, idx) => {
+          {featureKeys.map((feature, idx) => {
             const Icon = feature.icon;
             return (
               <div
@@ -69,10 +57,10 @@ export default function WhyUs() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-2">
-                      {feature.title}
+                      {t(feature.titleKey)}
                     </h3>
                     <p className="text-muted-foreground text-sm">
-                      {feature.description}
+                      {t(feature.descKey)}
                     </p>
                   </div>
                 </div>

@@ -16,6 +16,7 @@ import {
 import Link from "next/link";
 import ReservationForm from "@/components/reservation-form";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 import {
   Dialog,
   DialogContent,
@@ -37,16 +38,18 @@ export default function VehicleDetails() {
   const slug = params.slug as string;
 
   const vehicle = getVehicleBySlug(slug);
-
+  const { t } = useTranslation();
   if (!vehicle) {
     return (
       <div className="min-h-screen bg-background flex flex-col">
         <Navbar scrolled={true} />
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-2xl font-bold mb-4">Vehicle Not Found</h1>
+            <h1 className="text-2xl font-bold mb-4">
+              {t("fleetDetail.notFound")}
+            </h1>
             <Link href="/#fleet" className="text-primary hover:underline">
-              Back to Fleet
+              {t("fleetDetail.backToFleet")}
             </Link>
           </div>
         </div>
@@ -87,7 +90,7 @@ export default function VehicleDetails() {
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary mb-8 transition-colors"
         >
           <ArrowLeft size={20} />
-          Back to Fleet
+          {t("fleetDetail.backToFleet")}
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -97,16 +100,16 @@ export default function VehicleDetails() {
 
             <section className="bg-card p-6 rounded-xl border border-border shadow-sm">
               <h2 className="text-2xl font-bold mb-4 text-foreground">
-                {vehicle.model} Overview
+                {vehicle.model} — {t("fleetDetail.overview")}
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Experience comfort and reliability with our {vehicle.model}.
-                Perfect for{" "}
-                {vehicle.places > 4
-                  ? "groups and families"
-                  : "couples and business travelers"}
-                , offering ample space and premium features for your journey in
-                Morocco.
+                {t("fleetDetail.overviewText", {
+                  model: vehicle.model,
+                  audience:
+                    vehicle.places > 4
+                      ? t("fleetDetail.groupsAndFamilies")
+                      : t("fleetDetail.couplesAndBusiness"),
+                })}
               </p>
               {vehicle.images && vehicle.images.length > 1 && (
                 <Carousel className="w-full max-w-xl mx-auto">
@@ -133,15 +136,17 @@ export default function VehicleDetails() {
 
             <section className="bg-card p-6 rounded-xl border border-border shadow-sm">
               <h2 className="text-2xl font-bold mb-6 text-foreground">
-                Specifications & Amenities
+                {t("fleetDetail.specs")}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex items-center gap-4 p-4 bg-muted/50 rounded-lg">
                   <Users size={32} className="text-primary" />
                   <div>
-                    <p className="text-sm text-muted-foreground">Passengers</p>
+                    <p className="text-sm text-muted-foreground">
+                      {t("fleetDetail.passengers")}
+                    </p>
                     <p className="font-semibold text-lg">
-                      {vehicle.places} Seats
+                      {vehicle.places} {t("form.seats")}
                     </p>
                   </div>
                 </div>
@@ -149,7 +154,7 @@ export default function VehicleDetails() {
                   <Briefcase size={32} className="text-primary" />
                   <div>
                     <p className="text-sm text-muted-foreground">
-                      Luggage Capacity
+                      {t("fleetDetail.luggageCapacity")}
                     </p>
                     <p className="font-semibold text-lg">{vehicle.luggage}</p>
                   </div>
@@ -158,20 +163,24 @@ export default function VehicleDetails() {
                   <Car size={32} className="text-primary" />
                   <div>
                     <p className="text-sm text-muted-foreground">
-                      Vehicle Type
+                      {t("fleetDetail.vehicleType")}
                     </p>
                     <p className="font-semibold text-lg">
                       {vehicle.model.includes("Mercedes")
-                        ? "Luxury Van/Sedan"
-                        : "Standard Transport"}
+                        ? t("fleetDetail.luxuryVan")
+                        : t("fleetDetail.standardTransport")}
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 p-4 bg-muted/50 rounded-lg">
                   <Fuel size={32} className="text-primary" />
                   <div>
-                    <p className="text-sm text-muted-foreground">Condition</p>
-                    <p className="font-semibold text-lg">Excellent</p>
+                    <p className="text-sm text-muted-foreground">
+                      {t("fleetDetail.condition")}
+                    </p>
+                    <p className="font-semibold text-lg">
+                      {t("fleetDetail.excellent")}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -182,10 +191,12 @@ export default function VehicleDetails() {
           <div className="lg:col-span-1">
             <div className="sticky top-24">
               <div className="bg-card p-6 rounded-xl border border-border shadow-lg">
-                <h3 className="text-xl font-bold mb-4">Book This Vehicle</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  {t("fleetDetail.bookThisVehicle")}
+                </h3>
                 <div className="mb-6 pb-6 border-b border-border">
                   <p className="text-sm text-muted-foreground mb-1">
-                    Starting from
+                    {t("fleetDetail.startingFrom")}
                   </p>
                   <p className="text-3xl font-bold text-primary">
                     {vehicle.price}
@@ -193,20 +204,23 @@ export default function VehicleDetails() {
                 </div>
 
                 <p className="text-sm text-muted-foreground mb-6">
-                  Click the button below to reserve{" "}
+                  {t("fleetDetail.clickToReserve")}{" "}
                   <strong>{vehicle.model}</strong>.
                 </p>
 
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button className="w-full text-lg py-6">Book Now</Button>
+                    <Button className="w-full text-lg py-6">
+                      {t("button.bookNow")}
+                    </Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto">
                     <DialogHeader>
-                      <DialogTitle>Book {vehicle.model}</DialogTitle>
+                      <DialogTitle>
+                        {t("fleetDetail.bookThisVehicle")} — {vehicle.model}
+                      </DialogTitle>
                       <DialogDescription>
-                        Fill out the form below to complete your reservation
-                        request.
+                        {t("fleetDetail.fillForm")}
                       </DialogDescription>
                     </DialogHeader>
                     <ReservationForm
@@ -219,10 +233,10 @@ export default function VehicleDetails() {
 
               <div className="mt-6 bg-primary/5 p-6 rounded-xl border-l-4 border-primary">
                 <h4 className="font-semibold mb-2 text-foreground">
-                  Need Help?
+                  {t("fleetDetail.needHelp")}
                 </h4>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Contact us directly via WhatsApp for immediate assistance.
+                  {t("fleetDetail.contactWhatsapp")}
                 </p>
                 <a
                   href="https://wa.me/212654155528"
@@ -230,7 +244,7 @@ export default function VehicleDetails() {
                   rel="noreferrer"
                   className="w-full block text-center py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors font-medium"
                 >
-                  Chat on WhatsApp
+                  {t("button.chatWhatsapp")}
                 </a>
               </div>
             </div>

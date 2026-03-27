@@ -6,21 +6,24 @@ import Link from "next/link";
 import { useLocale } from "@/contexts/locale-context";
 import { convertAndFormat } from "@/lib/currency";
 import { getFeaturedTours } from "@/lib/data";
+import { useLocalizedData } from "@/hooks/use-localized-data";
 
-const routes = getFeaturedTours().map((tour) => ({
-  id: tour.id,
-  slug: tour.slug,
-  from: "Marrakech", 
-  to: tour.title,
-  duration: "Varies", 
-  price: 0, // Price not in excel
-  image: tour.image
-}));
-
+const featuredTours = getFeaturedTours();
 
 export default function PopularRoutes() {
   const { t } = useTranslation();
   const { currency } = useLocale();
+  const { localizedField } = useLocalizedData();
+
+  const routes = featuredTours.map((tour) => ({
+    id: tour.id,
+    slug: tour.slug,
+    from: "Marrakech",
+    to: localizedField(tour, "title"),
+    duration: t("routes.duration"),
+    price: 0,
+    image: tour.image,
+  }));
 
   return (
     <section id="routes" className="py-16 md:py-24 px-4 bg-background">

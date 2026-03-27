@@ -9,7 +9,7 @@ import {
 } from "react";
 import i18n from "@/lib/i18n";
 
-export type Language = "en" | "fr" | "ar";
+export type Language = "en" | "fr";
 export type Currency = "USD" | "EUR" | "MAD";
 
 interface LocaleContextType {
@@ -23,14 +23,14 @@ const LocaleContext = createContext<LocaleContextType | undefined>(undefined);
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>("en");
-  const [currency, setCurrency] = useState<Currency>("USD");
+  const [currency, setCurrency] = useState<Currency>("MAD");
 
   useEffect(() => {
     // Change i18n language when language changes
     i18n.changeLanguage(language);
 
-    // Update document direction for Arabic
-    document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
+    // Set LTR direction
+    document.documentElement.dir = "ltr";
     document.documentElement.lang = language;
   }, [language]);
 
@@ -54,7 +54,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
       const savedLang = localStorage.getItem("preferred-language") as Language;
       const savedCurr = localStorage.getItem("preferred-currency") as Currency;
 
-      if (savedLang && ["en", "fr", "ar"].includes(savedLang)) {
+      if (savedLang && ["en", "fr"].includes(savedLang)) {
         setLanguage(savedLang);
       }
       if (savedCurr && ["USD", "EUR", "MAD"].includes(savedCurr)) {
@@ -89,7 +89,6 @@ export function useLocale() {
 export const languages = {
   en: { name: "English" },
   fr: { name: "Français" },
-  ar: { name: "العربية" },
 };
 
 export const currencies = {
